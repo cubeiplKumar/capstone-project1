@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 MAINTAINER trainings.anil@gmail.com
 RUN apt-get install -y httpd \
-zip\
+zip \
 unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page292/seomark.zip /var/www/html/
 WORKDIR /var/www/html/
