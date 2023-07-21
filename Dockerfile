@@ -1,6 +1,6 @@
 FROM centos:latest
 MAINTAINER trainings.anil@gmail.com
-RUN yum install -y httpd \
+RUN yum install -y httpd 
 RUN sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-Linux-*
 RUN sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.epel.cloud|g' /etc/yum.repos.d/CentOS-Linux-*
 zip \
