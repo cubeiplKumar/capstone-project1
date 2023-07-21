@@ -1,6 +1,6 @@
-FROM centos:latest
+FROM ubuntu:20.04
 MAINTAINER trainings.anil@gmail.com
-RUN yum install -y httpd \
+RUN apt-get install -y httpd \
 zip\
 unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page292/seomark.zip /var/www/html/
