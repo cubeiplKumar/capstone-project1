@@ -1,6 +1,7 @@
 FROM ubuntu:20.04
 MAINTAINER trainings.anil@gmail.com
-RUN apt-get install -y httpd 
+RUN apt-get update && \
+    apt-get install -y apache2 
 RUN apt-get install zip 
 RUN apt-get install unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page292/seomark.zip /var/www/html/
